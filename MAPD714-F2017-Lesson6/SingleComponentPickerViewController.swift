@@ -1,10 +1,8 @@
 import UIKit
 
-class ViewController: UITabBarController {
+class SingleComponentPickerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 }
-

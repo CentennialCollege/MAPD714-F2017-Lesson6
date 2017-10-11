@@ -1,10 +1,10 @@
+
 import UIKit
 
-class ViewController: UITabBarController {
+class CustomPickerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
 }
-

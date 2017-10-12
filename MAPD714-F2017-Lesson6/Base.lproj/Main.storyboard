@@ -187,6 +187,10 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeM-js-nOM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="IAm-BX-da7" id="fEj-4V-uFm"/>
+                                    <outlet property="delegate" destination="IAm-BX-da7" id="Dfl-LI-ugE"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nz-YL-OIL">
                                 <rect key="frame" x="164" y="219" width="46" height="30"/>
@@ -194,6 +198,9 @@
                                     <constraint firstAttribute="height" constant="30" id="h0l-Me-SQq"/>
                                 </constraints>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="OnButtonPressed:" destination="IAm-BX-da7" eventType="touchUpInside" id="IQw-rJ-8WM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -209,6 +216,9 @@
                         <viewLayoutGuide key="safeArea" id="zRh-0S-fuT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="QqB-zU-UGq"/>
+                    <connections>
+                        <outlet property="dependentPicker" destination="jeM-js-nOM" id="pc2-LH-7Tj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ear-CH-5Fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

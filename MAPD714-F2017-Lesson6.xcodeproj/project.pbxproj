@@ -32,6 +32,7 @@
 		E970A1171F8ED9CF0060DD60 /* DoubleComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleComponentPickerViewController.swift; sourceTree = "<group>"; };
 		E970A1191F8ED9E40060DD60 /* DependentComponentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependentComponentPickerViewController.swift; sourceTree = "<group>"; };
 		E970A11B1F8ED9F70060DD60 /* CustomPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerViewController.swift; sourceTree = "<group>"; };
+		E970A11D1F8F00C20060DD60 /* statedictionary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 				E970A1081F8ED6770060DD60 /* Assets.xcassets */,
 				E970A10A1F8ED6770060DD60 /* LaunchScreen.storyboard */,
 				E970A10D1F8ED6770060DD60 /* Info.plist */,
+				E970A11D1F8F00C20060DD60 /* statedictionary.plist */,
 			);
 			path = "MAPD714-F2017-Lesson6";
 			sourceTree = "<group>";

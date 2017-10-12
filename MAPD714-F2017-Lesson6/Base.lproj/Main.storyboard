@@ -140,6 +140,10 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcA-T3-14i">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Dda-8D-ebU" id="og9-he-OMJ"/>
+                                    <outlet property="delegate" destination="Dda-8D-ebU" id="BUH-LS-hlR"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reL-cY-yPF">
                                 <rect key="frame" x="164" y="217" width="46" height="30"/>
@@ -147,6 +151,9 @@
                                     <constraint firstAttribute="height" constant="30" id="3o1-mS-N6s"/>
                                 </constraints>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="OnButtonPressed:" destination="Dda-8D-ebU" eventType="touchUpInside" id="C1e-eJ-9Ny"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -162,6 +169,9 @@
                         <viewLayoutGuide key="safeArea" id="42c-eX-kTQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="8Mg-xK-OiO"/>
+                    <connections>
+                        <outlet property="doublePicker" destination="RcA-T3-14i" id="eea-kN-k5d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gkO-WD-Slw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,5 +1,7 @@
 import UIKit
 
+
+
 class DatePickerViewController: UIViewController {
 
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -9,10 +11,15 @@ class DatePickerViewController: UIViewController {
         
         let date = NSDate()
         datePicker.setDate(date as Date, animated: false)
+        
+       
     }
     
     @IBAction func OnButtonPressed(_ sender: UIButton) {
+
         let date = datePicker.date
+        
+        datePicker.timeZone = NSTimeZone.init(abbreviation: "EDT")! as TimeZone
         
         let message = "The Date and Time you selected is \(date)"
         
